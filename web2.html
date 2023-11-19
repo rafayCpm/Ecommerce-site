@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <style>
+        *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color:rgba(128, 128, 128, 0.152);
+}
+.heading span{
+    color: rgb(126, 149, 203);
+    margin-right: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius:5rem ;
+    background-color: #333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn:hover{
+  color:#fffdfd;
+  border-color:2px solid  rgb(244, 244, 244);
+  background-color: #727070;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background-color: #eee;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index:1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bolder;  
+    text-decoration:none;
+    font-style:italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+header .logo span{
+    color:green;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color:#666;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color:rgba(0, 0, 255, 0.147);
+    text-decoration:underline;
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color:rgba(0, 0, 255, 0.147);
+}
+
+header #toggler{
+    display: none;
+}
+
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+
+
+
+/* home sectin start */
+.home{ 
+  display: flex;
+  align-items: center;
+  min-height:100vh;
+  background: url(pexels-thiago-japyassu-1069798.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.home .content{
+  max-width: 50rem;
+}
+.home .content h3{
+  font-size: 6rem;
+  color: #fff;
+}
+.home .content span{
+  font-size: 3.5rem;
+  color:rgb(230, 230, 230);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.home .content p{
+  font-size: 1.5rem;
+  color:#eae8e8;
+  padding:1rem 0;
+  line-height:1.5;
+}
+
+/* home sectin end */
+
+
+
+/* about sention start */
+
+.about .row{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius:.5rem;
+    box-shadow:0 .5rem 1rem rgb(0, 0, 0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%;transform:translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode:screen ;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size:3rem;
+    color:#333;
+}
+.about .row .content p{
+    font-size:1.5rem;
+    color:#999;
+    padding: .5rem 0;
+    padding-top:1rem ;
+    line-height: 1.5;
+}
+
+/* about sention emd*/
+
+
+
+.icons-container{
+    background:#eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background:#fff ;
+    border: 1rem solid  rgb(0, 0, 0,.1);
+    padding: 2rem;
+    display:flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.icons-container .icons img{
+    height:5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+/* product list */
+.product .box-container{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 1.5rem;
+}
+
+
+.product .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.product .box-container .box .discount{
+    position: absolute;
+    top: 1rem;left: 1rem;
+    padding:.7rem 1rem;
+    font-size:2rem;
+    color:rgba(0, 0, 255, 0.147);
+    background-color:rgba(255,51,153,.05);
+    z-index:1 ;
+    border-radius: .5rem;
+
+}
+
+.product .box-container .box .image{
+    position:relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.product .box-container .box .image img{
+    height: 25rem;
+}
+
+.product .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.product .box-container .box .image .icons{
+    position: absolute;
+    bottom:-7rem;left: 0;right: 0;
+    display:flex ;
+}
+.product .box-container .box:hover .image .icons{
+bottom: 0;
+}
+.product .box-container .box .image .icons a{
+    height: 2rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    width: 50%;
+    background-color: #555;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+
+.product .box-container .box .image .icons .cart-btn{
+    border-left:.1rem solid #fff7;
+    border-right:.1rem solid #fff7;
+    width: 100%;
+}
+
+.product .box-container .box .image .icons a:hover{
+    background-color: #333;
+}
+
+
+.product .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.product .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;  
+}
+
+.product .box-container .box .content .price{
+    font-size: 2.5rem;
+    color:green;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.product .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight:lighter;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+/* review section start */
+ .review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+ }
+ .review .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:3rem 2rem;
+    position: relative;
+    border: .1rem solid rgb(0, 0, 0,.1);
+ }
+ .review .box-container .box .fa-quote-right{
+    position:absolute;
+    bottom: 3rem; right: 3rem;
+    font-size:6rem;
+    color:#eee;
+ }
+
+ .review .box-container .box .stars i{
+    color: #ffde06d4;
+    font-size: 2rem;
+ }
+
+ .review .box-container .box p{
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding-top: 2rem;
+ }
+
+ .review .box-container .box .user{
+    display: flex;
+    align-items:center;
+    padding-top: 2rem;
+ }
+ 
+
+ .review .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+ }
+
+ .review .box-container .box .user h3{
+    font-size: 2rem;
+    color: #333;
+ }
+
+ .review .box-container .box .user span{
+    font-size: 1.5rem;
+    color: #999;
+ }
+/* review section end */
+
+
+
+
+.home .content h3{
+        font-size:5rem;
+    }
+
+    .home .content span{
+        font-size:2.5rem;
+    }
+    .icons-container .icons h3{
+    font-size:2rem;
+}
+.icons-container .icons span{
+    font-size: 1.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+ 
+.contact .row form{
+    flex:1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.4rem rgb(0, 0, 0,.1);
+    border: 1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius:.5rem;
+}
+
+.contact .row .image{
+    flex:1 1 40rem;
+}
+.contact .row .image img{
+    width: 100%;
+ 
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgb(0, 0, 0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color:#66666649;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+
+
+/* footer */
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #6666662c;
+    width: 100%;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+
+}
+
+.footer .box-container .box h3{
+    color: #030303;
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    font-weight: 900;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color:black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+.footer .box-container .box a:hover{
+    color: #555;
+    text-decoration: underline;
+    
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+.box1{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius:5rem ;
+    background-color: #333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+.box1:hover{
+  color:#fffdfde9;
+  border-color:2px solid  rgb(244, 244, 244);
+  background-color: #727070;
+  text-decoration: underline;
+}
+.box2{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius:5rem ;
+    background-color: #333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.box2:hover{
+  color:#fffdfde9;
+  border-color:2px solid  rgb(244, 244, 244);
+  background-color: #727070;
+  text-decoration: underline;
+}
+.box3{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius:5rem ;
+    background-color: #333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.box3:hover{
+  color:#fffdfde9;
+  border-color:2px solid  rgb(244, 244, 244);
+  background-color: #727070;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* media queries */
+    @media (max-width:991px) {
+        html{
+    font-size:55%;
+}
+header{
+    padding:2rem;
+}
+section{
+    padding:2rem;
+}
+.home{
+    background-position:bottom;
+}
+    }
+
+    @media (max-width:768px) {
+        html .fa-bars{
+            display: block;
+        }
+        header .navbar{
+            position:absolute;
+            top: 100%; left: 0;
+            right: 0;
+            background-color: #eee;
+            border-top: 1rem solid rgba(0,0,0,.1);
+            clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+
+    header #toggler:checked ~ .navbar{
+            clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+
+        header .navbar a{
+            margin:1.5rem ;
+            padding: 1.5rem;
+            background-color: #fff;
+            border: 1rem solid rgba(0,0,0,.1) ;
+            display:block;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width:450px) {
+        html{
+    font-size:50%;
+    
+}
+.heading{
+    font-size:3rem;
+    
+}
+
+    }
+    </style>
+</head>
+<body>
+    
+
+    <!-- header section start -->
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">Wireless <span> World</span></a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#product">product</a>
+        <a href="#review">reviews</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user" data-bs-toggle="modal" data-bs-target="#signupModal"></a>
+    </div>
+</header>
+        <!-- header section end -->
+  
+  <!-- signupModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Get an wireless world account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn1 btn-primary p-2 rounded-5">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn1 btn-secondary p-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- home section start -->
+        <section class="home" id="home">
+
+            <div class="content">
+            <h3>Wireless World</h3>
+            <span>Online Mobile Store</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, nesciunt vero tenetur vel nisi accusantium recusandae, incidunt asperiores repellat sit dolor dolore!</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        
+        </section>
+        <!-- home section end -->
+
+
+
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span>Us</h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="pexels-rodnae-productions-7308104.mp4" loop autoplay muted></video>
+                <h3>Best Phone Sellers</h3>
+            </div>
+            <div class="content">
+                <h3>Why Choose Us?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum culpa nemo dignissimos doloribus quae suscipit accusamus deserunt error recusandae velit, est sequi ipsa tempora exercitationem aliquid! Ex ratione unde iusto rem sequi blanditiis laboriosam aut labore dolore? Commodi nulla explicabo voluptates reiciendis animi nam ipsa asperiores quae iste corporis.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+    </section>
+        <!-- about section end -->
+
+
+
+
+
+    <!-- icon section start -->
+    <section class="icons-container">
+        <div class="icons">
+            <img src="1789280.avif" alt="">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="download.png" alt="">
+            <div class="info">
+                <h3>10 days returms</h3>
+                <span>money back guarantee</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="download12344.png" alt="">
+            <div class="info">
+                <h3>offer </h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="download567890.png" alt="">
+            <div class="info">
+                <h3>secure payment</h3>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+    </section>
+        <!-- icon section end -->
+
+
+
+
+            <!-- product section start -->
+            <section class="product" id="product">
+                <h1 class="heading">latest <span>product</span></h1>
+                <button class="box1" >Apple</button>
+                <button class="box2" >Sumsang</button>
+                <button class="box3" >Google pixel</button>
+
+                <div class="box-container" id="box-container1">
+                    <div class="box">
+                        <span class="discount">5%                       </span>
+                            <div class="image">
+                                <img src="image4.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 14 pro</h3>
+                                <div class="price">$900.99 <span>$100.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">7%                       </span>
+                            <div class="image">
+                                <img src="image5.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 13 pro max</h3>
+                                <div class="price">$800.99 <span>$900.99</span></div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="box">
+                        <span class="discount">15%                       </span>
+                            <div class="image">
+                                <img src="image6.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 11 pro</h3>
+                                <div class="price">$700.99 <span>$600.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+
+                    <div class="box">
+                        <span class="discount">12%                       </span>
+                            <div class="image">
+                                <img src="image3.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 11</h3>
+                                <div class="price">$600.99 <span>$700.99</span></div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="box">
+                        <span class="discount">13%                       </span>
+                            <div class="image">
+                                <img src="image2png.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone SE</h3>
+                                <div class="price">$500.99 <span>$600.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="image3.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 11</h3>
+                                <div class="price">$700.99 <span>$800.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="image7.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 8</h3>
+                                <div class="price">$400.99 <span>$500.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="cdacd348-7e3b-44b1-bb6f-8b24dd196dff_0_300.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 12 pro</h3>
+                                <div class="price">$600.99 <span>$700.99</span></div>
+                            </div>
+                    </div>
+                    
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="image3.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>iphone 11</h3>
+                                <div class="price">$700.99 <span>$800.99</span></div>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div class="box-container" id="box-container2">
+                    <div class="box">
+                        <span class="discount">5%                       </span>
+                            <div class="image">
+                                <img src="simage1.png" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy A23 5G UW</h3>
+                                <div class="price">$900.99 <span>$100.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">7%                       </span>
+                            <div class="image">
+                                <img src="simage3.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy A14</h3>
+                                <div class="price">$800.99 <span>$900.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="box">
+                        <span class="discount">15%                       </span>
+                            <div class="image">
+                                <img src="simage2.png" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy S23 Ultra</h3>
+                                <div class="price">$700.99 <span>$600.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+
+                    <div class="box">
+                        <span class="discount">12%                       </span>
+                            <div class="image">
+                                <img src="simage4.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy Z Flip4 5G</h3>
+                                <div class="price">$600.99 <span>$700.99</span></div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="box">
+                        <span class="discount">13%                       </span>
+                            <div class="image">
+                                <img src="simage5.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy Z Fold4 5G</h3>
+                                <div class="price">$500.99 <span>$600.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="simage6.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy A53 5G</h3>
+                                <div class="price">$700.99 <span>$800.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="simage7.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy S22 Ultra 5G</h3>
+                                <div class="price">$400.99 <span>$500.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="simage8.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy S22+ 5G</h3>
+                                <div class="price">$600.99 <span>$700.99</span></div>
+                            </div>
+                    </div>
+                    
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="simage9.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Galaxy S22 5G</h3>
+                                <div class="price">$700.99 <span>$800.99</span></div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+                <div class="box-container" id="box-container3">
+                    <div class="box">
+                        <span class="discount">5%                       </span>
+                            <div class="image">
+                                <img src="gimage1.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Pixel 7 Pro</h3>
+                                <div class="price">$900.99 <span>$100.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">7%                       </span>
+                            <div class="image">
+                                <img src="gimage2.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Google
+                                    Pixel 7</h3>
+                                <div class="price">$800.99 <span>$900.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="box">
+                        <span class="discount">15%                       </span>
+                            <div class="image">
+                                <img src="gimage3.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Google
+                                    Pixel 6 Pro</h3>
+                                <div class="price">$700.99 <span>$600.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+
+                    <div class="box">
+                        <span class="discount">12%                       </span>
+                            <div class="image">
+                                <img src="gimage4.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Google
+                                    Pixel 6</h3>
+                                <div class="price">$600.99 <span>$700.99</span></div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="box">
+                        <span class="discount">13%                       </span>
+                            <div class="image">
+                                <img src="gimage5.png" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>Google
+                                    Pixel 6a</h3>
+                                <div class="price">$500.99 <span>$600.99</span></div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="gimage6.jpg" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>google pixel 4 XL</h3>
+                                <div class="price">$400.99 <span>$500.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="gimage7.jpg" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>google pixel 5</h3>
+                                <div class="price">$400.99 <span>$500.99</span></div>
+                            </div>
+                    </div>
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="gimage8.jpg" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>google pixel 4 </h3>
+                                <div class="price">$600.99 <span>$700.99</span></div>
+                            </div>
+                    </div>
+                    
+
+
+                    <div class="box">
+                        <span class="discount">10%                       </span>
+                            <div class="image">
+                                <img src="gimage9.jpg" alt="" >
+                                <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to details</a>
+                                <a href="#" class="fas fa-share"></a>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <h3>google pixel 6 5G</h3>
+                                <div class="price">$700.99 <span>$800.99</span></div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        <!-- product section end -->
+
+
+
+    <!-- review section start  -->
+            <section class="review" id="review">
+<h1 class="heading">
+    <span>customer's</span>review  
+</h1>
+<div class="box-container">
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quidem quam, consequatur facere blanditiis perspiciatis harum tempore ducimus aspernatur sit reiciendis omnis sunt molestias illo sed modi? Illo numquam illum tenetur tempore quis corrupti laudantium, ipsum laboriosam, perferendis exercitationem sequi eum quas aliquam sed vel ad? Ad optio totam sit!</p>
+        <div class="user">
+            <img src="download (1).jpg" alt="">
+            <div class="user-info">
+                <h3>john</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+
+
+
+
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quidem quam, consequatur facere blanditiis perspiciatis harum tempore ducimus aspernatur sit reiciendis omnis sunt molestias illo sed modi? Illo numquam illum tenetur tempore quis corrupti laudantium, ipsum laboriosam, perferendis exercitationem sequi eum quas aliquam sed vel ad? Ad optio totam sit!</p>
+                <div class="user">
+                    <img src="images (210.jpg" alt="">
+                    <div class="user-info">
+                        <h3>john</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+
+
+
+
+
+
+
+
+                    <div class="box">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quidem quam, consequatur facere blanditiis perspiciatis harum tempore ducimus aspernatur sit reiciendis omnis sunt molestias illo sed modi? Illo numquam illum tenetur tempore quis corrupti laudantium, ipsum laboriosam, perferendis exercitationem sequi eum quas aliquam sed vel ad? Ad optio totam sit!</p>
+                        <div class="user">
+                            <img src="images (1).jpg" alt="">
+                            <div class="user-info">
+                                <h3>john</h3>
+                                <span>happy customer</span>
+                            </div>
+                        </div>
+                        <span class="fas fa-quote-right"></span>
+                    </div>
+
+                    
+
+</div>
+            </section>
+<!-- review section end  -->
+
+
+
+
+
+
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span>us</h1>
+    <div class="row">
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="massage"
+            id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send massage" class="btn">
+        </form>
+        <div class="image">
+            <img src="undrwaw.png" alt="" srcset="">
+        </div>
+    </div>
+</section>
+<!-- contact section end  -->
+
+
+
+
+<!-- footer section start  -->
+<section class="footer">
+    <div class="box-container">
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">product</a>
+         <a href="#">review</a>
+         <a href="#">contact</a>
+      </div>
+
+
+      <div class="box">
+        <h3>extre links</h3>
+        <a href="#">my account</a>
+        <a href="#">my order</a>
+        <a href="#">my favorite</a>
+
+    </div>
+
+
+
+    <div class="box">
+        <h3>locations</h3>
+        <a href="#">pakistan</a>
+        <a href="#">USA</a>
+        <a href="#">japan</a>
+        <a href="#">india</a>
+    </div>
+
+
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">92-322-74357</a>
+            <a href="#">Wireless world@gmail.com</a>
+            <a href="#">pakistan,karachi</a>
+        </div>
+    </div>
+</section>
+<!-- footer section end -->
+
+
+
+
+
+
+
+<script src="jquery-3.6.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.box1').click(function(){
+            $('#box-container1').slideToggle()
+            $('#box-container2').slideUp()
+            $('#box-container3').slideUp()
+        })
+                $('.box2').click(function(){
+            $('#box-container1').slideUp()
+            $('#box-container2').slideToggle()
+            $('#box-container3').slideUp()
+        })
+        $('.box3').click(function(){
+            $('#box-container1').slideUp()
+            $('#box-container2').slideUp()
+            $('#box-container3').slideToggle()
+        })
+        
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
